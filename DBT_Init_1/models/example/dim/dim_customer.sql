@@ -1,9 +1,12 @@
-{{config(materialized='table')}}
+{{config(
+    materialized='table',
+    post_hook="insert into {{this}} (customer_id, first_name) values (-1, 'N/A')"
+)}}
 
 SELECT c.customer_id , c.store_id, 
        c.first_name, c.last_name, a.address, c.email,
        concat(c.first_name, ' ', c.last_name) AS full_name,
-       split_part(a.email, '@', 1) AS domain,
+       split_part(c.email, '@', 1) AS domain,
        i.city, o.country, CASE 
          WHEN c.active = 1 THEN 'Active'
          ELSE 'Inactive'
