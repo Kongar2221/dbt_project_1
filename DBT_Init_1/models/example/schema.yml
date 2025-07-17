@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 4f5bd49b70b832001883b7172dd14434b3db9324
 version: 2
 
 models:
@@ -22,7 +18,7 @@ models:
         data_tests:
           - unique
           - not_null
-<<<<<<< HEAD
+
 
 sources:
   - name: sakila
@@ -32,5 +28,21 @@ sources:
       - name: address
       - name: city
       - name: country
-=======
->>>>>>> 4f5bd49b70b832001883b7172dd14434b3db9324
+
+models:
+  - name: "dim_date"
+    description: "data table"
+    columns:
+      - name: date_key
+        description: "Primary key for this table"
+        data_tests:
+          - unique 
+          - not_null
+  - name: "dim_customer"
+    description: "data table"
+    columns:
+      - name: customer_key
+        description: "Primary key for this table"
+        data_tests:
+          - unique 
+          - not_null

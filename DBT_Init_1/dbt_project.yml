@@ -22,7 +22,6 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -31,8 +30,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   DBT_Init_1:
-    # Config indicated by + and applies to all files under models/example/
     example:
-       +materialized: view
-    dim:
+      +materialized: view
+            # Config indicated by + and applies to all files under models/example/
+      dim:
         +materialized: table
