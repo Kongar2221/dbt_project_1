@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4f5bd49b70b832001883b7172dd14434b3db9324
 version: 2
 
 models:
@@ -18,6 +22,7 @@ models:
         data_tests:
           - unique
           - not_null
+<<<<<<< HEAD
 
 sources:
   - name: sakila
@@ -27,3 +32,5 @@ sources:
       - name: address
       - name: city
       - name: country
+=======
+>>>>>>> 4f5bd49b70b832001883b7172dd14434b3db9324

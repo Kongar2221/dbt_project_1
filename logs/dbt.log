@@ -42,6 +42,7 @@ Runtime Error
 [0m12:57:16.289588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209AF6C9450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209AF6CAE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209A8CE0A50>]}
 [0m12:57:16.289588 [debug] [MainThread]: Flushing usage events
 [0m12:57:16.924879 [debug] [MainThread]: An error was encountered while trying to flush usage events
+<<<<<<< HEAD
 [0m14:39:16.652063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B77225E310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B77225D290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7722B8910>]}
 
 
@@ -107,3 +108,5 @@ Runtime Error
 [0m15:57:25.437655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243C2FDB050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243C2D3C150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243C2D3F190>]}
 [0m15:57:25.438654 [debug] [MainThread]: Flushing usage events
 [0m15:57:26.082932 [debug] [MainThread]: An error was encountered while trying to flush usage events
+=======
+>>>>>>> 4f5bd49b70b832001883b7172dd14434b3db9324
