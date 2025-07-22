@@ -18,18 +18,6 @@ models:
         data_tests:
           - unique
           - not_null
-
-
-sources:
-  - name: sakila
-    schema: Sakila
-    tables:
-      - name: customer
-      - name: address
-      - name: city
-      - name: country
-
-models:
   - name: "dim_date"
     description: "data table"
     columns:
@@ -41,8 +29,47 @@ models:
   - name: "dim_customer"
     description: "data table"
     columns:
-      - name: customer_key
+      - name: customer_id
         description: "Primary key for this table"
         data_tests:
           - unique 
           - not_null
+  - name: "dim_staff"
+    description: "data table"
+    columns:
+      - name: staff_id
+        description: "Primary key for this table"
+        data_tests:
+          - unique 
+          - not_null
+  - name: "dim_store"
+    description: "data table"
+    columns:
+      - name: store_id
+        description: "Primary key for this table"
+        data_tests:
+          - unique 
+          - not_null
+  - name: "dim_film"
+    description: "data table"
+    columns:
+      - name: film_id
+        description: "Primary key for this table"
+        data_tests:
+          - unique 
+          - not_null
+sources:
+  - name: sakila
+    schema: sakila
+    tables:
+      - name: customer
+      - name: address
+      - name: city
+      - name: country
+      - name: staff
+      - name: film
+      - name: language
+      - name: film_category
+      - name: category
+      - name: store
+
