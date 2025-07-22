@@ -35,4 +35,7 @@ models:
             # Config indicated by + and applies to all files under models/example/
       dim:
         +materialized: table
+        fact:
+          +materialized: incremental
+          +schema: facts
         

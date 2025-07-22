@@ -1,0 +1,15 @@
+models:
+  - name: fact_rental
+    columns:
+      - name: rental_id
+        description: "primary key for the rental fact table"
+        tests:
+          - unique
+          - not_null
+  - name: fact_payment
+    columns:
+      - name: payment_id
+        description: "primary key for the payment fact table"
+        tests:
+          - unique
+          - not_null

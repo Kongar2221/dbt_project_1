@@ -72,4 +72,6 @@ sources:
       - name: film_category
       - name: category
       - name: store
-
+      - name: rental
+      - name: inventory
+      - name: payment
