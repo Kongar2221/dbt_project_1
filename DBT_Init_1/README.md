@@ -1,15 +1,31 @@
-Welcome to your new dbt project!
+# 🎬 Rental Store Analytics Project
 
-### Using the starter project
+A data analytics pipeline simulating a Blockbuster-style rental store. This project demonstrates a full-stack workflow using **DBeaver**, **Supabase**, **DBT**, and **VS Code**, with optional **Power BI** integration and deployment on **GitHub**.
 
-Try running the following commands:
-- dbt run
-- dbt test
+---
 
+## 📦 Tech Stack
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+- 🐘 **PostgreSQL** via [Supabase](https://supabase.io/)
+- 🧠 **DBT (Data Build Tool)** for data modeling and transformation
+- 💻 **VS Code** for development
+- 🗃️ **DBeaver** for SQL and database loading
+- 🌐 **Git & GitHub** for version control
+- 📊 *(Optional)* **Power BI** for dashboard visualizations
+
+---
+
+## 🗂️ Project Structure
+
+```bash
+DBT_Project_1/
+├── dbt_project.yml
+├── models/
+│   ├── staging/       # Clean raw tables
+│   ├── marts/         # Business logic models
+│   └── ...
+├── snapshots/         # Change tracking (if any)
+├── seeds/             # Static seed data (if used)
+├── target/            # DBT compiled files
+├── .gitignore
+└── README.md
