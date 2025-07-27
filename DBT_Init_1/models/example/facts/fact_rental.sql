@@ -1,4 +1,4 @@
-{{ config(materialized='incremental') }}
+{{ config(materialized='incremental', unique_key='rental_id') }}
 
     select  r.rental_id, r.rental_date, r.inventory_id,
             r.customer_id, r.return_date, r.staff_id,
