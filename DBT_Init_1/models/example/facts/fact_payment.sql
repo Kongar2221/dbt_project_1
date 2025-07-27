@@ -1,4 +1,11 @@
-{{ config(materialized='incremental') }}
-
+{{ config( materialized='incremental',
+           unique_key='payment_id' ) 
+  }}
 select *
-    from {{ source('sakila', 'payment') }}
+from {{ source('sakila', 'payment') }}
+{% if is_incremental() %}
+  where payment_date >= coalesce(
+    (select max(payment_date) from {{ this }}),
+    '1900-01-01'
+  )
+{% endif %}
